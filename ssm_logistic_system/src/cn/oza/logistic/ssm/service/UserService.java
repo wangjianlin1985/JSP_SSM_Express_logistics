@@ -1,0 +1,26 @@
+// 
+// 
+// 
+
+package cn.oza.logistic.ssm.service;
+
+import java.util.List;
+import cn.oza.logistic.ssm.pojo.UserExample;
+import cn.oza.logistic.ssm.pojo.User;
+
+public interface UserService
+{
+    int deleteByPrimaryKey(Long userId);
+    
+    int insert(User record);
+    
+    int insertSelective(User record);
+    
+    List<User> selectByExample(UserExample example);
+    
+    User selectByPrimaryKey(Long userId);
+    
+    int updateByPrimaryKeySelective(User record);
+    
+    int updateByPrimaryKey(User record);
+}
